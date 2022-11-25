@@ -1,0 +1,368 @@
+/* CTO--.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.CTO---serif{font-family:serif}.CTO---sans-serif{font-family:sans-serif}.CTO---cursive{font-family:cursive}.CTO---monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.CTO---wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.CTO---image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.CTO---table,.CTO---table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.CTO---table-all{border:1px solid #ccc}
+.CTO---bordered tr,.CTO---table-all tr{border-bottom:1px solid #ddd}.CTO---striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.CTO---table-all tr:nth-child(odd){background-color:#fff}.CTO---table-all tr:nth-child(even){background-color:#f1f1f1}
+.CTO---hoverable tbody tr:hover,.CTO---ul.CTO---hoverable li:hover{background-color:#ccc}.CTO---centered tr th,.CTO---centered tr td{text-align:center}
+.CTO---table td,.CTO---table th,.CTO---table-all td,.CTO---table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.CTO---table th:first-child,.CTO---table td:first-child,.CTO---table-all th:first-child,.CTO---table-all td:first-child{padding-left:16px}
+.CTO---btn,.CTO---button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.CTO---btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.CTO---btn,.CTO---button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.CTO---disabled,.CTO---btn:disabled,.CTO---button:disabled{cursor:not-allowed;opacity:0.3}.CTO---disabled *,:disabled *{pointer-events:none}
+.CTO---btn.CTO---disabled:hover,.CTO---btn:disabled:hover{box-shadow:none}
+.CTO---badge,.CTO---tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.CTO---badge{border-radius:50%}
+.CTO---ul{list-style-type:none;padding:0;margin:0}.CTO---ul li{padding:8px 16px;border-bottom:1px solid #ddd}.CTO---ul li:last-child{border-bottom:none}
+.CTO---tooltip,.CTO---display-container{position:relative}.CTO---tooltip .CTO---text{display:none}.CTO---tooltip:hover .CTO---text{display:inline-block}
+.CTO---ripple:active{opacity:0.5}.CTO---ripple{transition:opacity 0s}
+.CTO---input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.CTO---select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.CTO---dropdown-click,.CTO---dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.CTO---dropdown-hover:hover .CTO---dropdown-content{display:block}
+.CTO---dropdown-hover:first-child,.CTO---dropdown-click:hover{background-color:#ccc;color:#000}
+.CTO---dropdown-hover:hover > .CTO---button:first-child,.CTO---dropdown-click:hover > .CTO---button:first-child{background-color:#ccc;color:#000}
+.CTO---dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.CTO---check,.CTO---radio{width:24px;height:24px;position:relative;top:6px}
+.CTO---sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.CTO---bar-block .CTO---dropdown-hover,.CTO---bar-block .CTO---dropdown-click{width:100%}
+.CTO---bar-block .CTO---dropdown-hover .CTO---dropdown-content,.CTO---bar-block .CTO---dropdown-click .CTO---dropdown-content{min-width:100%}
+.CTO---bar-block .CTO---dropdown-hover .CTO---button,.CTO---bar-block .CTO---dropdown-click .CTO---button{width:100%;text-align:left;padding:8px 16px}
+.CTO---main,#main{transition:margin-left .4s}
+.CTO---modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.CTO---modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.CTO---bar{width:100%;overflow:hidden}.CTO---center .CTO---bar{display:inline-block;width:auto}
+.CTO---bar .CTO---bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.CTO---bar .CTO---dropdown-hover,.CTO---bar .CTO---dropdown-click{position:static;float:left}
+.CTO---bar .CTO---button{white-space:normal}
+.CTO---bar-block .CTO---bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.CTO---bar-block.CTO---center .CTO---bar-item{text-align:center}.CTO---block{display:block;width:100%}
+.CTO---responsive{display:block;overflow-x:auto}
+.CTO---container:after,.CTO---container:before,.CTO---panel:after,.CTO---panel:before,.CTO---row:after,.CTO---row:before,.CTO---row-padding:after,.CTO---row-padding:before,
+.CTO---cell-row:before,.CTO---cell-row:after,.CTO---clear:after,.CTO---clear:before,.CTO---bar:before,.CTO---bar:after{content:"";display:table;clear:both}
+.CTO---col,.CTO---half,.CTO---third,.CTO---twothird,.CTO---threequarter,.CTO---quarter{float:left;width:100%}
+.CTO---col.s1{width:8.33333%}.CTO---col.s2{width:16.66666%}.CTO---col.s3{width:24.99999%}.CTO---col.s4{width:33.33333%}
+.CTO---col.s5{width:41.66666%}.CTO---col.s6{width:49.99999%}.CTO---col.s7{width:58.33333%}.CTO---col.s8{width:66.66666%}
+.CTO---col.s9{width:74.99999%}.CTO---col.s10{width:83.33333%}.CTO---col.s11{width:91.66666%}.CTO---col.s12{width:99.99999%}
+@media (min-width:601px){.CTO---col.m1{width:8.33333%}.CTO---col.m2{width:16.66666%}.CTO---col.m3,.CTO---quarter{width:24.99999%}.CTO---col.m4,.CTO---third{width:33.33333%}
+.CTO---col.m5{width:41.66666%}.CTO---col.m6,.CTO---half{width:49.99999%}.CTO---col.m7{width:58.33333%}.CTO---col.m8,.CTO---twothird{width:66.66666%}
+.CTO---col.m9,.CTO---threequarter{width:74.99999%}.CTO---col.m10{width:83.33333%}.CTO---col.m11{width:91.66666%}.CTO---col.m12{width:99.99999%}}
+@media (min-width:993px){.CTO---col.l1{width:8.33333%}.CTO---col.l2{width:16.66666%}.CTO---col.l3{width:24.99999%}.CTO---col.l4{width:33.33333%}
+.CTO---col.l5{width:41.66666%}.CTO---col.l6{width:49.99999%}.CTO---col.l7{width:58.33333%}.CTO---col.l8{width:66.66666%}
+.CTO---col.l9{width:74.99999%}.CTO---col.l10{width:83.33333%}.CTO---col.l11{width:91.66666%}.CTO---col.l12{width:99.99999%}}
+.CTO---rest{overflow:hidden}.CTO---stretch{margin-left:-16px;margin-right:-16px}
+.CTO---content,.CTO---auto{margin-left:auto;margin-right:auto}.CTO---content{max-width:980px}.CTO---auto{max-width:1140px}
+.CTO---cell-row{display:table;width:100%}.CTO---cell{display:table-cell}
+.CTO---cell-top{vertical-align:top}.CTO---cell-middle{vertical-align:middle}.CTO---cell-bottom{vertical-align:bottom}
+.CTO---hide{display:none!important}.CTO---show-block,.CTO---show{display:block!important}.CTO---show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.CTO---auto{max-width:95%}}
+@media (max-width:600px){.CTO---modal-content{margin:0 10px;width:auto!important}.CTO---modal{padding-top:30px}
+.CTO---dropdown-hover.CTO---mobile .CTO---dropdown-content,.CTO---dropdown-click.CTO---mobile .CTO---dropdown-content{position:relative}	
+.CTO---hide-small{display:none!important}.CTO---mobile{display:block;width:100%!important}.CTO---bar-item.CTO---mobile,.CTO---dropdown-hover.CTO---mobile,.CTO---dropdown-click.CTO---mobile{text-align:center}
+.CTO---dropdown-hover.CTO---mobile,.CTO---dropdown-hover.CTO---mobile .CTO---btn,.CTO---dropdown-hover.CTO---mobile .CTO---button,.CTO---dropdown-click.CTO---mobile,.CTO---dropdown-click.CTO---mobile .CTO---btn,.CTO---dropdown-click.CTO---mobile .CTO---button{width:100%}}
+@media (max-width:768px){.CTO---modal-content{width:500px}.CTO---modal{padding-top:50px}}
+@media (min-width:993px){.CTO---modal-content{width:900px}.CTO---hide-large{display:none!important}.CTO---sidebar.CTO---collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.CTO---hide-medium{display:none!important}}
+@media (max-width:992px){.CTO---sidebar.CTO---collapse{display:none}.CTO---main{margin-left:0!important;margin-right:0!important}.CTO---auto{max-width:100%}}
+.CTO---top,.CTO---bottom{position:fixed;width:100%;z-index:1}.CTO---top{top:0}.CTO---bottom{bottom:0}
+.CTO---overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.CTO---display-topleft{position:absolute;left:0;top:0}.CTO---display-topright{position:absolute;right:0;top:0}
+.CTO---display-bottomleft{position:absolute;left:0;bottom:0}.CTO---display-bottomright{position:absolute;right:0;bottom:0}
+.CTO---display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.CTO---display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.CTO---display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.CTO---display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.CTO---display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.CTO---display-container:hover .CTO---display-hover{display:block}.CTO---display-container:hover span.CTO---display-hover{display:inline-block}.CTO---display-hover{display:none}
+.CTO---display-position{position:absolute}
+.CTO---circle{border-radius:50%}
+.CTO---round-small{border-radius:2px}.CTO---round,.CTO---round-medium{border-radius:4px}.CTO---round-large{border-radius:8px}.CTO---round-xlarge{border-radius:16px}.CTO---round-xxlarge{border-radius:32px}
+.CTO---row-padding,.CTO---row-padding>.CTO---half,.CTO---row-padding>.CTO---third,.CTO---row-padding>.CTO---twothird,.CTO---row-padding>.CTO---threequarter,.CTO---row-padding>.CTO---quarter,.CTO---row-padding>.CTO---col{padding:0 8px}
+.CTO---container,.CTO---panel{padding:0.01em 16px}.CTO---panel{margin-top:16px;margin-bottom:16px}
+.CTO---code,.CTO---codespan{font-family:Consolas,"courier new";font-size:16px}
+.CTO---code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.CTO---codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.CTO---card,.CTO---card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.CTO---card-4,.CTO---hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.CTO---spin{animation:CTO---spin 2s infinite linear}@keyframes CTO---spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.CTO---animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.CTO---animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.CTO---animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.CTO---animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.CTO---animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.CTO---animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.CTO---animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.CTO---animate-input{transition:width 0.4s ease-in-out}.CTO---animate-input:focus{width:100%!important}
+.CTO---opacity,.CTO---hover-opacity:hover{opacity:0.60}.CTO---opacity-off,.CTO---hover-opacity-off:hover{opacity:1}
+.CTO---opacity-max{opacity:0.25}.CTO---opacity-min{opacity:0.75}
+.CTO---greyscale-max,.CTO---grayscale-max,.CTO---hover-greyscale:hover,.CTO---hover-grayscale:hover{filter:grayscale(100%)}
+.CTO---greyscale,.CTO---grayscale{filter:grayscale(75%)}.CTO---greyscale-min,.CTO---grayscale-min{filter:grayscale(50%)}
+.CTO---sepia{filter:sepia(75%)}.CTO---sepia-max,.CTO---hover-sepia:hover{filter:sepia(100%)}.CTO---sepia-min{filter:sepia(50%)}
+.CTO---tiny{font-size:10px!important}.CTO---small{font-size:12px!important}.CTO---medium{font-size:15px!important}.CTO---large{font-size:18px!important}
+.CTO---xlarge{font-size:24px!important}.CTO---xxlarge{font-size:36px!important}.CTO---xxxlarge{font-size:48px!important}.CTO---jumbo{font-size:64px!important}
+.CTO---left-align{text-align:left!important}.CTO---right-align{text-align:right!important}.CTO---justify{text-align:justify!important}.CTO---center{text-align:center!important}
+.CTO---border-0{border:0!important}.CTO---border{border:1px solid #ccc!important}
+.CTO---border-top{border-top:1px solid #ccc!important}.CTO---border-bottom{border-bottom:1px solid #ccc!important}
+.CTO---border-left{border-left:1px solid #ccc!important}.CTO---border-right{border-right:1px solid #ccc!important}
+.CTO---topbar{border-top:6px solid #ccc!important}.CTO---bottombar{border-bottom:6px solid #ccc!important}
+.CTO---leftbar{border-left:6px solid #ccc!important}.CTO---rightbar{border-right:6px solid #ccc!important}
+.CTO---section,.CTO---code{margin-top:16px!important;margin-bottom:16px!important}
+.CTO---margin{margin:16px!important}.CTO---margin-top{margin-top:16px!important}.CTO---margin-bottom{margin-bottom:16px!important}
+.CTO---margin-left{margin-left:16px!important}.CTO---margin-right{margin-right:16px!important}
+.CTO---padding-small{padding:4px 8px!important}.CTO---padding{padding:8px 16px!important}.CTO---padding-large{padding:12px 24px!important}
+.CTO---padding-16{padding-top:16px!important;padding-bottom:16px!important}.CTO---padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.CTO---padding-32{padding-top:32px!important;padding-bottom:32px!important}.CTO---padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.CTO---padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.CTO---padding-top-64{padding-top:64px!important}.CTO---padding-top-48{padding-top:48px!important}
+.CTO---padding-top-32{padding-top:32px!important}.CTO---padding-top-24{padding-top:24px!important}
+.CTO---left{float:left!important}.CTO---right{float:right!important}
+.CTO---button:hover{color:#000!important;background-color:#ccc!important}
+.CTO---transparent,.CTO---hover-none:hover{background-color:transparent!important}
+.CTO---hover-none:hover{box-shadow:none!important}
+/* Colors */
+.CTO---amber,.CTO---hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.CTO---aqua,.CTO---hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.CTO---blue,.CTO---hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.CTO---light-blue,.CTO---hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.CTO---brown,.CTO---hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.CTO---cyan,.CTO---hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.CTO---blue-grey,.CTO---hover-blue-grey:hover,.CTO---blue-gray,.CTO---hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.CTO---green,.CTO---hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.CTO---light-green,.CTO---hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.CTO---indigo,.CTO---hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.CTO---khaki,.CTO---hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.CTO---lime,.CTO---hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.CTO---orange,.CTO---hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.CTO---deep-orange,.CTO---hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.CTO---pink,.CTO---hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.CTO---purple,.CTO---hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.CTO---deep-purple,.CTO---hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.CTO---red,.CTO---hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.CTO---sand,.CTO---hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.CTO---teal,.CTO---hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.CTO---yellow,.CTO---hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.CTO---white,.CTO---hover-white:hover{color:#000!important;background-color:#fff!important}
+.CTO---black,.CTO---hover-black:hover{color:#fff!important;background-color:#000!important}
+.CTO---grey,.CTO---hover-grey:hover,.CTO---gray,.CTO---hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.CTO---light-grey,.CTO---hover-light-grey:hover,.CTO---light-gray,.CTO---hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.CTO---dark-grey,.CTO---hover-dark-grey:hover,.CTO---dark-gray,.CTO---hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.CTO---pale-red,.CTO---hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.CTO---pale-green,.CTO---hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.CTO---pale-yellow,.CTO---hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.CTO---pale-blue,.CTO---hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.CTO---text-amber,.CTO---hover-text-amber:hover{color:#ffc107!important}
+.CTO---text-aqua,.CTO---hover-text-aqua:hover{color:#00ffff!important}
+.CTO---text-blue,.CTO---hover-text-blue:hover{color:#2196F3!important}
+.CTO---text-light-blue,.CTO---hover-text-light-blue:hover{color:#87CEEB!important}
+.CTO---text-brown,.CTO---hover-text-brown:hover{color:#795548!important}
+.CTO---text-cyan,.CTO---hover-text-cyan:hover{color:#00bcd4!important}
+.CTO---text-blue-grey,.CTO---hover-text-blue-grey:hover,.CTO---text-blue-gray,.CTO---hover-text-blue-gray:hover{color:#607d8b!important}
+.CTO---text-green,.CTO---hover-text-green:hover{color:#4CAF50!important}
+.CTO---text-light-green,.CTO---hover-text-light-green:hover{color:#8bc34a!important}
+.CTO---text-indigo,.CTO---hover-text-indigo:hover{color:#3f51b5!important}
+.CTO---text-khaki,.CTO---hover-text-khaki:hover{color:#b4aa50!important}
+.CTO---text-lime,.CTO---hover-text-lime:hover{color:#cddc39!important}
+.CTO---text-orange,.CTO---hover-text-orange:hover{color:#ff9800!important}
+.CTO---text-deep-orange,.CTO---hover-text-deep-orange:hover{color:#ff5722!important}
+.CTO---text-pink,.CTO---hover-text-pink:hover{color:#e91e63!important}
+.CTO---text-purple,.CTO---hover-text-purple:hover{color:#9c27b0!important}
+.CTO---text-deep-purple,.CTO---hover-text-deep-purple:hover{color:#673ab7!important}
+.CTO---text-red,.CTO---hover-text-red:hover{color:#f44336!important}
+.CTO---text-sand,.CTO---hover-text-sand:hover{color:#fdf5e6!important}
+.CTO---text-teal,.CTO---hover-text-teal:hover{color:#009688!important}
+.CTO---text-yellow,.CTO---hover-text-yellow:hover{color:#d2be0e!important}
+.CTO---text-white,.CTO---hover-text-white:hover{color:#fff!important}
+.CTO---text-black,.CTO---hover-text-black:hover{color:#000!important}
+.CTO---text-grey,.CTO---hover-text-grey:hover,.CTO---text-gray,.CTO---hover-text-gray:hover{color:#757575!important}
+.CTO---text-light-grey,.CTO---hover-text-light-grey:hover,.CTO---text-light-gray,.CTO---hover-text-light-gray:hover{color:#f1f1f1!important}
+.CTO---text-dark-grey,.CTO---hover-text-dark-grey:hover,.CTO---text-dark-gray,.CTO---hover-text-dark-gray:hover{color:#3a3a3a!important}
+.CTO---border-amber,.CTO---hover-border-amber:hover{border-color:#ffc107!important}
+.CTO---border-aqua,.CTO---hover-border-aqua:hover{border-color:#00ffff!important}
+.CTO---border-blue,.CTO---hover-border-blue:hover{border-color:#2196F3!important}
+.CTO---border-light-blue,.CTO---hover-border-light-blue:hover{border-color:#87CEEB!important}
+.CTO---border-brown,.CTO---hover-border-brown:hover{border-color:#795548!important}
+.CTO---border-cyan,.CTO---hover-border-cyan:hover{border-color:#00bcd4!important}
+.CTO---border-blue-grey,.CTO---hover-border-blue-grey:hover,.CTO---border-blue-gray,.CTO---hover-border-blue-gray:hover{border-color:#607d8b!important}
+.CTO---border-green,.CTO---hover-border-green:hover{border-color:#4CAF50!important}
+.CTO---border-light-green,.CTO---hover-border-light-green:hover{border-color:#8bc34a!important}
+.CTO---border-indigo,.CTO---hover-border-indigo:hover{border-color:#3f51b5!important}
+.CTO---border-khaki,.CTO---hover-border-khaki:hover{border-color:#f0e68c!important}
+.CTO---border-lime,.CTO---hover-border-lime:hover{border-color:#cddc39!important}
+.CTO---border-orange,.CTO---hover-border-orange:hover{border-color:#ff9800!important}
+.CTO---border-deep-orange,.CTO---hover-border-deep-orange:hover{border-color:#ff5722!important}
+.CTO---border-pink,.CTO---hover-border-pink:hover{border-color:#e91e63!important}
+.CTO---border-purple,.CTO---hover-border-purple:hover{border-color:#9c27b0!important}
+.CTO---border-deep-purple,.CTO---hover-border-deep-purple:hover{border-color:#673ab7!important}
+.CTO---border-red,.CTO---hover-border-red:hover{border-color:#f44336!important}
+.CTO---border-sand,.CTO---hover-border-sand:hover{border-color:#fdf5e6!important}
+.CTO---border-teal,.CTO---hover-border-teal:hover{border-color:#009688!important}
+.CTO---border-yellow,.CTO---hover-border-yellow:hover{border-color:#ffeb3b!important}
+.CTO---border-white,.CTO---hover-border-white:hover{border-color:#fff!important}
+.CTO---border-black,.CTO---hover-border-black:hover{border-color:#000!important}
+.CTO---border-grey,.CTO---hover-border-grey:hover,.CTO---border-gray,.CTO---hover-border-gray:hover{border-color:#9e9e9e!important}
+.CTO---border-light-grey,.CTO---hover-border-light-grey:hover,.CTO---border-light-gray,.CTO---hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.CTO---border-dark-grey,.CTO---hover-border-dark-grey:hover,.CTO---border-dark-gray,.CTO---hover-border-dark-gray:hover{border-color:#616161!important}
+.CTO---border-pale-red,.CTO---hover-border-pale-red:hover{border-color:#ffe7e7!important}.CTO---border-pale-green,.CTO---hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.CTO---border-pale-yellow,.CTO---hover-border-pale-yellow:hover{border-color:#ffffcc!important}.CTO---border-pale-blue,.CTO---hover-border-pale-blue:hover{border-color:#e7ffff!important}
+body {
+    -webkit-font-smoothing: antialiased;
+  }
+  
+
+#back-top {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    color:chartreuse;
+    z-index: 1000;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .fly {
+    position: absolute;
+    animation: launch ease-out 4s infinite;
+    -webkit-animation: launch ease-out 4s infinite
+  }
+  
+  @-webkit-keyframes launch {
+  }
+  @keyframes launch {
+    70% {
+      transform: translateY(-800px) translateX(800px);
+    }
+  }
+  @media (min-width: 100%) {
+    .content {
+      width: 100%
+    }
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.CTO---row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.CTO---sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
+
+.CTO---image:hover{
+color: #111; 
+background: greenyellow; 
+box-shadow: 0 0 100px greenyellow; 
+}
+
+.container{
+width: 100%;
+padding: 30px 30px 50px;
+background-color: gray;
+border: 2px solid rgba(255,255,255,0.06);
+border-radius: 30px;
+box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+backdrop-filter: blur(100px);
+} 
+.container *{
+font-family: "Poppins",sans-serif;
+color: black;
+font-weight: 500;
+}
+.skill-head{
+margin-bottom: 50px;
+letter-spacing: 2px;
+text-align: center;
+font-size: 33px;
+font-weight: bold;
+}
+.skills:not(:last-child){
+margin-bottom: 30px;
+}
+.details{
+width: 100%;
+display: flex;  
+justify-content: space-between;
+margin-bottom: 10px;
+}
+.bar{
+position: relative;
+
+border: 2px solid #000000;
+
+border-radius: 20px;
+
+}
+.bar div{
+position: relative;
+width: 0;
+height: 9px;
+border-radius: 10px;
+background-color: #0047fa;
+
+
+}
+#html-bar{
+animation: html-fill 20s forwards;
+}
+@keyframes html-fill{
+100%{
+    width: 90%;
+}
+}
+#css-bar{
+animation: css-fill 20s forwards;
+}
+@keyframes css-fill{
+100%{
+    width: 75%;
+}
+}
+#js-bar{
+animation: js-fill 20s forwards;
+}
+@keyframes js-fill {
+100%{
+    width: 72%;
+}
+}
+#boot-bar{
+animation: boot-fill 20s forwards;
+}
+@keyframes boot-fill{
+100%{
+    width: 58%;
+}
+} 
