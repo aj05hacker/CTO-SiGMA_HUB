@@ -233,39 +233,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .CTO---border-dark-grey,.CTO---hover-border-dark-grey:hover,.CTO---border-dark-gray,.CTO---hover-border-dark-gray:hover{border-color:#616161!important}
 .CTO---border-pale-red,.CTO---hover-border-pale-red:hover{border-color:#ffe7e7!important}.CTO---border-pale-green,.CTO---hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .CTO---border-pale-yellow,.CTO---hover-border-pale-yellow:hover{border-color:#ffffcc!important}.CTO---border-pale-blue,.CTO---hover-border-pale-blue:hover{border-color:#e7ffff!important}
-body {
-    -webkit-font-smoothing: antialiased;
-  }
-  
 
-#back-top {
-    position: fixed;
-    bottom: 10%;
-    left: 10%;
-    color:chartreuse;
-    z-index: 1000;
-    display: none;
-    cursor: pointer;
-  }
-  
-  .fly {
-    position: absolute;
-    animation: launch ease-out 4s infinite;
-    -webkit-animation: launch ease-out 4s infinite
-  }
-  
-  @-webkit-keyframes launch {
-  }
-  @keyframes launch {
-    70% {
-      transform: translateY(-800px) translateX(800px);
-    }
-  }
-  @media (min-width: 100%) {
-    .content {
-      width: 100%
-    }
-  }
 
   html{
     scroll-behavior:smooth;
