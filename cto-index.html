@@ -11,9 +11,37 @@
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Prata|Raleway'>
     <style>
 
+      /*cursor*/
+      
+            body {
+        height: 10%;
+        min-height: 100%;
+        cursor:none;
+        color: #000;
+        background-color: #fff;
+      }
+      
+      #invertedcursor {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        top: var(--y, 0);
+        left: var(--x, 0);
+        transform: translate(-50%, -50%);
+        mix-blend-mode: difference;
+        transition: transform .0s;
+      }
+      
+     /*cursor end*/
+      
+      
+      
     </style>
   </head> 
 <body class="CTO--black">
+  <div id="invertedcursor"></div>
   <div id="back-top">
     <div style="cursor:pointer"><span class="rocket" style="color:#ffbf00;font-size: 1.5cm;"><span class ="color-change">Σ͎</span></span></div>
   </div>
@@ -255,7 +283,28 @@
 </div>
 
 <!--============SCRIPT=============-->
-
+   
+    
+    
+    
+<script>
+  document.body.onmousemove = function(e) {
+document.documentElement.style.setProperty (
+  '--x', (
+    e.clientX+window.scrollX
+  )
+  + 'px'
+);
+document.documentElement.style.setProperty (
+  '--y', (
+    e.clientY+window.scrollY
+  ) 
+  + 'px'
+);
+}
+</script>
+    
+    
 
 <script src='https://codepen.io/housamz/pen/rNLdGNQ.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
